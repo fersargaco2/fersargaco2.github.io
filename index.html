@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de PDF</title>
+    <style>
+        /* Remove todas as margens e barras de rolagem da página principal */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #525659; /* Cor padrão da maioria dos visualizadores de PDF */
+        }
+        
+        /* Força o iframe a ocupar 100% da tela */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
 
+    <!-- 
+      IMPORTANTE: Substitua 'seu-arquivo.pdf' pelo nome exato do seu arquivo PDF.
+      Certifique-se de que o PDF esteja na mesma pasta que este arquivo index.html no GitHub.
+    -->
+    <iframe src="seu-arquivo.pdf">
+        <p>Seu navegador não suporta a visualização de PDFs. 
+        <a href="seu-arquivo.pdf">Clique aqui para baixar o PDF.</a></p>
+     iframe>
+
+</body>
+</html>
